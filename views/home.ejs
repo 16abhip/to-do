@@ -9,33 +9,40 @@
     <title> <%= title %> </title>
 </head>
 <body>
-    <h1 style="margin-left: 2vw;" class="greet_user"></h1>
+    <h1 style="margin-left: 2vw; margin-bottom: 10px;" class="greet_user"></h1>
+    <h1 style="text-align: center; margin: 40px;">WELCOME TO YOUR OWN PERSONALIZED TO-DO LIST</h1>
     <form action="/addToList" method="get">
         <button type="submit" class="add"><i class="fas fa-hammer"> ADD </i></button>
     </form>
     <h2 class="todolist">To Do List</h2>
     
     <div class="contents">
+
+        <% for(let i of task) { %>
+
         <div>
             <h3>
                 DESCRIPTION:
             </h3>
             <p style="overflow-y: auto; overflow-x: hidden;">
-                lgfcvbnmlkiusmkjdbjsbknslknsjbxkskxnsjxlsnbxksndcnb kjm
+                <%= i.name %>
             </p>
             <h3>
                 DATE:
             </h3>
             <p>
-
+                <%= i.date %>
             </p>
             <h3>
                 TO-DO TYPE: 
-                <button class="btn-type add"> WORK </button>
+                <button class="btn-type add"> <%= i.typeOfTask %> </button>
             </h3>
             <button class="add btn-type remove-btn">REMOVE</button>
         </div>
+        <% } %>
     </div>
+    <!-- <p style="margin: 20px;">NUMBER OF TASK PENDING: <%= num %> </p> -->
+
     <script type="text/javascript" src="../assets/js/home.js"></script>
 
 </body>

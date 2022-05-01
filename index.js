@@ -3,6 +3,8 @@ const app = express();
 const path = require('path');
 const port = 8000;
 
+app.use(express.urlencoded());
+
 // view engines
 
 app.set('view engine', 'ejs');

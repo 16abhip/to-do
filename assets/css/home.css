@@ -7,8 +7,8 @@ body {
     background-size: cover;
     color: rgb(255, 255, 255);
     background-color: cadetblue;
-    height: 98vh;
-    width: 98vw;
+    height: 100%;
+    width: 100%;
 }
 
 .add {
@@ -22,6 +22,7 @@ button:hover {
     background-color: rgb(245, 107, 135);
 }
 .contents {
+    margin: 150px;
     margin-top: 200px;
     display: flex;
     flex-wrap: wrap;
@@ -31,7 +32,7 @@ button:hover {
     background-color: #534141;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     height: 370px;
-    margin: 20px;
+    margin: 35px;
     width: 370px;
     border-radius: 10px;
     color: white;

@@ -7,6 +7,9 @@
     <script src="https://kit.fontawesome.com/968defa12c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/css/home.css">
     <style>
+        #home-btn {
+            margin-left: 50%;
+        }
         h1 {
             margin: 20px;
         }
@@ -44,28 +47,33 @@
     <div class="todoform">
         <form action="/add/add-task" method="post">
             <span>DESCRIPTION: </span>
-            <input placeholder="ENTER TEXT" type="text">
+            <input name="name" placeholder="ENTER TEXT" type="text">
             <br> <br>
             <br> <br> 
             <span>DATE: &nbsp;  </span>
-            <input type="date" name="" id="">
+            <input name="date" type="date">
             <br> <br>
             <br> <br>
             <span>TYPE:  &nbsp;    </span>
-            <input  list="type" placeholder="ENTER TYPE">
+            <input name="typeOfTask" list="type" placeholder="ENTER TYPE">
             <datalist id="type">
                 <option value="WORK">
                 <option value="HOME">
                 <option value="PERSONAL">
+                <option value="OTHER">
+
             </datalist>
             <br>
             <br>
             <button class="add btn-type" type="submit">SUBMIT</button>
         </form> 
+        
     </div>
     <hr>
     <hr>
-
+    <form action="/" type="get" >
+        <button id="home-btn" class="add btn-type" type="submit">HOME</button>
+    </form>
     <h1>HAVE A GREAT DAY!</h1>
 </body>
 </html>
