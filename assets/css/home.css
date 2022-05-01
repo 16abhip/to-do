@@ -1,6 +1,65 @@
 body {
     margin: 0;
-    /* font-family: sans-serif; */
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: aqua;
+    font-family: 'Courier New', Courier;
+    background-image: url("https://media3.giphy.com/media/BHNfhgU63qrks/giphy.gif?cid=ecf05e47cfb3y1w8vjjmwuqjtxcx7x06e5rhcb2xf0exhh26&rid=giphy.gif&ct=g");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    background-color: cadetblue;
+    height: 98vh;
+    width: 98vw;
+}
+
+.add {
+    padding: 7px;
+    position: absolute;
+    right:20px;
+    background-color: crimson;
+    border-radius: 10%;
+}
+button:hover {
+    background-color: rgb(245, 107, 135);
+}
+.contents {
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contents div {
+    background-color: #534141;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: 370px;
+    margin: 20px;
+    width: 370px;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contents div:hover {
+    background-color: #f8f4f4;
+    background-color: #474040;
+    transition: backgound-color 1s;
+    /* color: black; */
+}
+.todolist {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+
+.btn-type{
+    position: relative;
+    right:2px;
+    color: #f8f4f4;
+    font-size: large;
+}
+
+.remove-btn {
+    border-radius: 0;
+    background-color: rgb(39, 41, 37);
 }

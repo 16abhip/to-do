@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/968defa12c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <style>
+        h1 {
+            margin: 20px;
+        }
+        hr {
+            opacity: 0.2;
+        }
+        div{
+            margin: 20px;
+        }
+        .todoform{
+            text-align: center;
+            font-size: larger;
+        }
+        .todoform input{
+            padding: 10px;
+            background-color: rgb(245, 159, 159);
+        }
+    </style>
+    <title> <%= title %> </title>
+</head>
+<body>
+    <h1>
+        Add a task
+    </h1>
+    <div class="info">
+        <h3>DESCRIPTION:</h3>
+        <p>Description about your task</p>
+        <h3>DATE:</h3>
+        <p>Due date of your task</p>
+        <h3>TYPE:</h3>
+        <p>Type of your task</p>
+        <hr>
+        <hr>
+    </div>
+    <div class="todoform">
+        <form action="/add/add-task" method="post">
+            <span>DESCRIPTION: </span>
+            <input placeholder="ENTER TEXT" type="text">
+            <br> <br>
+            <br> <br> 
+            <span>DATE: &nbsp;  </span>
+            <input type="date" name="" id="">
+            <br> <br>
+            <br> <br>
+            <span>TYPE:  &nbsp;    </span>
+            <input  list="type" placeholder="ENTER TYPE">
+            <datalist id="type">
+                <option value="WORK">
+                <option value="HOME">
+                <option value="PERSONAL">
+            </datalist>
+            <br>
+            <br>
+            <button class="add btn-type" type="submit">SUBMIT</button>
+        </form> 
+    </div>
+    <hr>
+    <hr>
+
+    <h1>HAVE A GREAT DAY!</h1>
+</body>
+</html>

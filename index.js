@@ -10,7 +10,7 @@ app.set('views', './views');
 
 // routers
 
-app.use('/', require('./routes/home'));
+app.use('/', require('./routes/index'));
 
 // static files
 

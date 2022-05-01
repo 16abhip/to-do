@@ -4,14 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/968defa12c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/css/home.css">
-    <title><%= title %></title>
+    <title> <%= title %> </title>
 </head>
 <body>
-    <h1>
-        Hey this is <%= title %> page!
-    </h1>
+    <h1 style="margin-left: 2vw;" class="greet_user"></h1>
+    <form action="/addToList" method="get">
+        <button type="submit" class="add"><i class="fas fa-hammer"> ADD </i></button>
+    </form>
+    <h2 class="todolist">To Do List</h2>
+    
+    <div class="contents">
+        <div>
+            <h3>
+                DESCRIPTION:
+            </h3>
+            <p style="overflow-y: auto; overflow-x: hidden;">
+                lgfcvbnmlkiusmkjdbjsbknslknsjbxkskxnsjxlsnbxksndcnb kjm
+            </p>
+            <h3>
+                DATE:
+            </h3>
+            <p>
 
+            </p>
+            <h3>
+                TO-DO TYPE: 
+                <button class="btn-type add"> WORK </button>
+            </h3>
+            <button class="add btn-type remove-btn">REMOVE</button>
+        </div>
+    </div>
     <script type="text/javascript" src="../assets/js/home.js"></script>
 
 </body>
