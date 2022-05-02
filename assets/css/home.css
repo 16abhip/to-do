@@ -10,7 +10,10 @@ body {
     height: 100%;
     width: 100%;
 }
-
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
 .add {
     padding: 7px;
     position: absolute;
@@ -31,9 +34,9 @@ button:hover {
 .contents div {
     background-color: #534141;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    height: 370px;
+    height: 360px;
     margin: 35px;
-    width: 370px;
+    width: 360px;
     border-radius: 10px;
     color: white;
     padding: 10px;

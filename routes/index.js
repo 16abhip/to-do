@@ -4,6 +4,7 @@ const homeController = require('../controllers/home_controller');
 
 
 router.get('/', homeController.homePage);
+router.get('/delete-task', homeController.deleteDocument);
 router.get('/addToList', function(req, res)
 {
     res.render('add', {
