@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/ToDoList_db');
+mongoose.connect('mongodb+srv://admin-abhi:admin-abhi@cluster0.gazkwwk.mongodb.net/ToDoList_db');
 
 const db = mongoose.connection;
 
