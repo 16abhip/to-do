@@ -2,7 +2,7 @@ const express = require('express');
 const hostname = '0.0.0.0';
 const app = express();
 const path = require('path');
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 app.use(express.urlencoded());
 
